@@ -1,0 +1,24 @@
+" use system clipboard
+set clipboard=unnamed
+
+" make star stay at current word
+:nnoremap * *N
+
+" annoying mistakes
+:command WQ wq
+:command Wq wq
+:command W w
+:command Q q
+
+" jumping to first character in line
+map <Home> ^
+imap <Home> <esc>^i
+
+" delete without yank
+map r "_d
+vmap r "_d
+
+" single keystroke indentation
+map > >l
+map < <l
+map = =l
